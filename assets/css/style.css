@@ -13,20 +13,20 @@ body{
 }
   .opac{
     opacity: 1;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.8);
   }
 @media screen and (min-width:500px) {
   .opac{
     opacity: 0;
     transition: opacity 0.5s !important;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.8);
   }
 }
 .navbarStyle{
   width: 100%;
 }
 .nav-lin{
-  color: rgba(0,0,0,0.8);
+  color: rgba(255,255,255,0.8);
   font-size: 16px;
   padding: 20px;
   margin: 0;
@@ -34,11 +34,14 @@ body{
   text-decoration: none !important;
 }
 .nav-lin:hover{
-  color: rgba(0,0,0,0.8);
+  color: tomato;
 }
 .navContainer:hover + .opac{
   opacity: 1;
 }
 .opac:hover{
   opacity: 1;
+}
+.navbar-toggler{
+  background-color: white !important;
 }
