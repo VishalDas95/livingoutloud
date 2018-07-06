@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+  .opac{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.2);
+  }
+@media screen and (min-width:500px) {
+  .opac{
+    opacity: 0;
+    transition: opacity 0.5s !important;
+    background-color: rgba(0,0,0,0.2);
+  }
+}
+.navbarStyle{
+  width: 100%;
+}
+.nav-lin{
+  color: rgba(0,0,0,0.8);
+  font-size: 16px;
+  padding: 20px;
+  margin: 0;
+  font-weight: bolder;
+  text-decoration: none !important;
+}
+.nav-lin:hover{
+  color: rgba(0,0,0,0.8);
+}
+.navContainer:hover + .opac{
+  opacity: 1;
+}
+.opac:hover{
+  opacity: 1;
+}
