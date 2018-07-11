@@ -404,11 +404,6 @@ footer a:hover {
   body{font-size:10px};
 }
 
-.lead.text-center {
-  border-bottom:2px solid white;
-  border-width:thin;
-}
-
 .card {
   position:relative;
   margin:1em;
