@@ -56,18 +56,6 @@ body {
   box-shadow:8px 8px 10px rgba(45,42,42,0.48);
 }
 
-.infosec-img {
-  box-shadow:8px 8px 10px rgba(45,42,42,0.48);
-  margin-bottom:20px;
-  transition:all 0.3s ease-out;
-}
-
-.infosec-img:hover {
-  background:#000000;
-  opacity:0.4;
-  padding:4px;
-}
-
 .navbar-transparency {
   transition:all 0.6s ease-out;
 }
@@ -87,6 +75,7 @@ body {
 .heading-center::before {
   content:'';
   position:absolute;
+  display:block;
   bottom:-2px;
   left:-2px;
   width:0;
@@ -95,8 +84,8 @@ body {
   border:2px solid transparent;
 }
 
-.heading-center:hover::before {
-  animation:border 0.5s linear forwards;
+.heading-center::before {
+  animation:border 2s linear forwards;
 }
 
 @keyframes border {
@@ -109,7 +98,7 @@ body {
     border-left-color:transparent;
   }
   100% {
-    width:20%;
+    width:40%;
     height:100%;
     border-top-color:transparent;
     border-right-color:transparent;
@@ -121,6 +110,7 @@ body {
 .heading-center::after {
   content:'';
   position:absolute;
+  display:block;
   top:-2px;
   right:-2px;
   width:0;
@@ -129,8 +119,8 @@ body {
   border:2px solid transparent;
 }
 
-.heading-center:hover::after {
-  animation:border2 0.5s linear forwards;
+.heading-center::after {
+  animation:border2 2s linear forwards;
 }
 
 @keyframes border2 {
@@ -143,7 +133,7 @@ body {
     border-left-color:transparent;
   }
   100% {
-    width:20%;
+    width:40%;
     height:100%;
     border-top-color:#ffffff;
     border-right-color:#ffffff;
@@ -154,7 +144,7 @@ body {
 
 nav.navbar.shrink {
   min-height:35px;
-  background-color:rgba(0,0,0,0.78);
+  background-color:#000000;
 }
 
 nav.shrink a {
@@ -165,20 +155,247 @@ nav.shrink a {
 }
 
 nav.shrink .navbar-brand {
-  width:60px;
+  width:40px;
 }
 
 nav.shrink .navbar-toggle {
   padding:4px 5px;
   margin:8px 15px 8px 0;
 }
-.navbar-toggler{
-  background-color: white !important;
+
+.heading-content-sm {
+  position:relative;
+  display:block;
+  cursor:pointer;
 }
-hr{
-  border: none;
-  height: 2px;
-  color: white;
-  background: white;
-  width: 70%;
+
+.heading-content-sm::before {
+  content:'';
+  position:absolute;
+  top:-2px;
+  left:50%;
+  width:0;
+  height:0;
+  background:transparent;
+  border:2px solid transparent;
 }
+
+.heading-content-sm:hover::before {
+  animation:border-content-sm 0.5s linear forwards;
+}
+
+@keyframes border-content-sm {
+  0% {
+    width:0;
+    height:0;
+    border-top-color:#ffffff;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+  }
+  50% {
+    width:8%;
+    height:0;
+    border-top-color:#ffffff;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+  }
+  100% {
+    width:8%;
+    height:100%;
+    border-top-color:#ffffff;
+    border-right-color:#ffffff;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+  }
+}
+
+.heading-content-sm::after {
+  content:'';
+  position:absolute;
+  bottom:-2px;
+  right:50%;
+  width:0;
+  height:0;
+  background:transparent;
+  border:2px solid transparent;
+}
+
+.heading-content-sm:hover::after {
+  animation:border-content-sm2 0.5s linear forwards;
+}
+
+@keyframes border-content-sm2 {
+  0% {
+    width:0;
+    height:0;
+    border-top-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+  }
+  50% {
+    width:8%;
+    height:0;
+    border-top-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color:#ffffff;
+    border-left-color:transparent;
+  }
+  100% {
+    width:8%;
+    height:100%;
+    border-top-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color:#ffffff;
+    border-left-color:#ffffff;
+  }
+}
+
+.heading-content-lg {
+  position:relative;
+  display:block;
+  cursor:pointer;
+}
+
+.heading-content-lg::before {
+  content:'';
+  position:absolute;
+  top:-2px;
+  left:50%;
+  width:0;
+  height:0;
+  background:transparent;
+  border:2px solid transparent;
+}
+
+.heading-content-lg:hover::before {
+  animation:border-content 0.5s linear forwards;
+}
+
+@keyframes border-content {
+  0% {
+    width:0;
+    height:0;
+    border-top-color:#ffffff;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+  }
+  50% {
+    width:25%;
+    height:0;
+    border-top-color:#ffffff;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+  }
+  100% {
+    width:25%;
+    height:100%;
+    border-top-color:#ffffff;
+    border-right-color:#ffffff;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+  }
+}
+
+.heading-content-lg::after {
+  content:'';
+  position:absolute;
+  bottom:-2px;
+  right:50%;
+  width:0;
+  height:0;
+  background:transparent;
+  border:2px solid transparent;
+}
+
+.heading-content-lg:hover::after {
+  animation:border-content2 0.5s linear forwards;
+}
+
+@keyframes border-content2 {
+  0% {
+    width:0;
+    height:0;
+    border-top-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+  }
+  50% {
+    width:25%;
+    height:0;
+    border-top-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color:#ffffff;
+    border-left-color:transparent;
+  }
+  100% {
+    width:25%;
+    height:100%;
+    border-top-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color:#ffffff;
+    border-left-color:#ffffff;
+  }
+}
+
+.img-row img {
+  width:130px;
+  margin-top:8px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color:#495057;
+  background-color:rgba(237,219,202,0.57);
+  border-color:#dee2e6 #dee2e6 #fff;
+}
+
+.rounded-circle.img-fluid.bg-img {
+  left:15%;
+  position:absolute;
+  display:block;
+  opacity:0.4;
+  z-index:-1;
+  background-size:cover;
+}
+
+.bgimg {
+  position:absolute;
+  width:100%;
+  height:1070px;
+  background:linear-gradient(rgba(48,48,48,0.5), rgba(48,48,48,0.5)), url("../../assets/img//global_infosec.jpg");
+  z-index:-1;
+  overflow:hidden;
+}
+
+footer a {
+  color:#828a91;
+  text-decoration:none;
+  background-color:transparent;
+}
+
+footer a:hover {
+  color:#a7aeb6;
+  text-decoration:underline;
+}
+
+.fa.fa-facebook:hover {
+  color:#3750d1;
+}
+
+.fa.fa-linkedin:hover {
+  color:#3c88e1;
+}
+
+.fa.fa-instagram:hover {
+  color:#f3512e;
+}
+
+@media (max-width: @screen-xs) {
+  body{font-size:10px};
+}
+
