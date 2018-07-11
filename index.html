@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
@@ -16,15 +17,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rufina">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/set2.css" />
-    <title>Living Out Loud</title>
-    <link rel="shorcut icon" src="Living_Out_Loud.ico">
+<title>Living Out Loud</title>
+<link rel="shorcut icon" src="Living_Out_Loud.ico">
 </head>
 
 <body style="/*margin-top:0px;*//*background:#f2244b;*/background-repeat:no-repeat;background-size:auto;">
@@ -34,11 +36,10 @@
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item navbar-link" role="presentation"><a class="nav-link active" href="#home">Home</a></li>
-                        <li class="nav-item navbar-link" role="presentation"><a class="nav-link active" href="#csap">CSAP<br></a></li>
+                        <li class="nav-item navbar-link" role="presentation"><a class="nav-link active" href="#home" id="home-nav">Home</a></li>
+                        <li class="nav-item navbar-link" role="presentation"><a class="nav-link active" href="#csap" id="csap-nav">CSAP<br></a></li>
                         <li class="nav-item navbar-link" role="presentation"><a class="nav-link active" href="#trainings">Trainings</a></li>
                         <li class="nav-item navbar-link" role="presentation"><a class="nav-link active" href="#events">Events</a></li>
-                        <li class="nav-item navbar-link" role="presentation"><a class="nav-link active" href="#">Contact Us</a></li>
                     </ul>
             </div>
     </div>
@@ -46,46 +47,131 @@
     </div>
     <div class="container-fluid" id="home" style="background-repeat:no-repeat;background-size:cover;background-position:top;background-attachment:fixed;height:auto;padding:94px;">
         <div class="jumbotron" style="margin-top:106px;color:rgb(0,0,0);font-size:24px;margin-bottom:0px;padding-top:0;background-color:transparent;">
-            <p class="text-center heading-center" style="font-family:'Julius Sans One', sans-serif;font-size:61px;color:rgb(255,255,255);font-weight:bold;">LIVING OUT LOUD</p>
-            <p class="text-center" style="font-family:Handlee, cursive;font-style:normal;font-size:22px;color:rgb(255,255,255);">Living Out Loud. Everyday</p>
-            <p class="text-center"><a href="#"><i class="fa fa-chevron-down" style="color:rgb(255,255,255);"></i></a></p>
+            <h1 class="text-center heading-center" style="color:rgb(255,255,255);font-family:'Julius Sans One', sans-serif;font-size:65px;"><strong>LIVING OUT LOUD</strong><br></h1>
+            <p class="text-center d-block" style="font-family:Handlee, cursive;font-style:normal;font-size:22px;color:rgb(255,255,255);">Living Out Loud. Everyday</p>
+            <p class="text-nowrap text-center d-block"><a href="#"><i class="fa fa-chevron-down" style="color:rgb(255,255,255);"></i></a></p>
         </div>
     </div>
     <div class="container-fluid" id="content" style="margin-bottom:20px;color:rgb(254,255,255);height:auto;margin-top:24px;">
-        <div id="csap" style="height:auto;margin-top:0;margin-bottom:37px;background-color:rgba(255,255,255,0.1);padding-top:26px;">
-            <h1 class="text-uppercase text-center heading-center" style="font-family:Muli, sans-serif;font-weight:500;color:rgb(255,255,255);letter-spacing:4px;font-size:30px;margin-bottom:0px;">Cyber Security Awareness Programms</h1>
+        <div id="csap" style="height:auto;margin-top:0;margin-bottom:37px;padding-top:26px;">
+            <h1 class="text-uppercase text-center heading-content-lg" style="font-family:Muli, sans-serif;font-weight:500;color:rgb(255,255,255);letter-spacing:4px;font-size:30px;margin-bottom:0px;">Cyber Security Awareness Programms</h1>
             <div style="margin-top:16px;">
                 <ul class="nav nav-pills nav-justified">
-                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-1" style="background-color:transparent;color:rgb(255,255,255);font-size:22px;font-family:'Julius Sans One', sans-serif;font-weight:bold;">Global Infosec Summit 2017</a></li>
+                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-1" style="background-color:transparent;color:rgb(255,255,255);font-size:26px;font-family:'Julius Sans One', sans-serif;font-weight:bold;">Global Infosec Summit 2017</a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" role="tabpanel" id="tab-1">
+                        <blockquote class="blockquote text-center">
+                            <p class="lead mb-0" style="font-family:'Source Sans Pro', sans-serif;">"An Information and Cyber Security Conference with talks from experts across various domains of technology like WebApps, IoT, Networking, Cyber Crimes, Intelligence, Block Chain, Crypto-currency and many more"</p>
+                        </blockquote>
                         <div class="row no-gutters">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <div class="media">
-                                    <div class="media-body">
-                                        <blockquote class="blockquote text-center">
-                                            <p class="lead mb-0" style="font-family:'Source Sans Pro', sans-serif;">"An Information and Cyber Security Conference with talks from experts across various domains of technology like WebApps, IoT, Networking, Cyber Crimes, Intelligence, Block Chain, Crypto-currency and many more"</p>
-                                        </blockquote>
-                                        <div class="row no-gutters">
-                                            <div class="col">
-                                                <h1 class="text-center">15</h1>
-                                                <p class="text-center" style="font-family:'Julius Sans One', sans-serif;font-weight:bold;">Speakers</p>
-                                            </div>
-                                            <div class="col">
-                                                <h1 class="text-center">15</h1>
-                                                <p class="text-center" style="font-family:'Julius Sans One', sans-serif;font-weight:bold;">Partners</p>
-                                            </div>
-                                            <div class="col">
-                                                <h1 class="text-center">2</h1>
-                                                <p class="text-center" style="font-family:'Julius Sans One', sans-serif;font-weight:bold;">Days</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col">
+                                <h1 class="text-center">12</h1>
+                                <p class="text-center" style="font-family:'Julius Sans One', sans-serif;font-weight:bold;">Speakers</p>
                             </div>
-                            <div class="col-sm-auto col-md-6 col-lg-auto col-xl-auto offset-sm-2 offset-md-3 offset-lg-4"><img class="img-thumbnail img-fluid infosec-img" src="assets/img/global_infosec_1-001.jpg" width="400px">
-                                <div></div>
+                            <div class="col">
+                                <h1 class="text-center">7</h1>
+                                <p class="text-center" style="font-family:'Julius Sans One', sans-serif;font-weight:bold;">Partners</p>
+                            </div>
+                            <div class="col">
+                                <h1 class="text-center">2</h1>
+                                <p class="text-center" style="font-family:'Julius Sans One', sans-serif;font-weight:bold;">Days</p>
+                            </div>
+                        </div>
+                        <p class="lead text-center" style="font-family:'Source Sans Pro', sans-serif;font-size:36px;margin-top:18px;">Speakers of the Day<br></p>
+                        <div class="row no-gutters img-row" style="margin-top:20px;">
+                            <div class="col-sm-6 col-lg-2 col-xs-2">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/RakshitTandon.jpg"></p>
+                                <h4 class="text-center">Rakshit Tandon<br></h4>
+                                <p class="text-center">Chairman,India Against Child Abuse<br></p>
+                            </div>
+                            <div class="col-sm-6 col-lg-2 col-xs-2">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/AmarPrasadReddy.jpg"></p>
+                                <h4 class="text-center">Dr. Amar Prasad Reddy<br></h4>
+                                <p class="text-center">Director -National Cyber Safety and Security Standards<br></p>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-2">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/DineshOBareja.jpg"></p>
+                                <h4 class="text-center">Dinesh O Bareja<br></h4>
+                                <p class="text-center">Microsoft MVP, CISA , CISM, CyberInsurance<br></p>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-2">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/GenGDBakshi.jpg" style="height:139px;"></p>
+                                <h4 class="text-center">Gen G.D.Bakshi<br></h4>
+                                <p class="text-center">Defence Analyst,Government Of India<br></p>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-2">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/D3.jpg"></p>
+                                <h4 class="text-center">Deepak Kumar D3<br></h4>
+                                <p class="text-center">Digital Forensics Expert<br></p>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-2">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/NipunJaiswal.jpg"></p>
+                                <h4 class="text-center">Nipun Jaswal<br></h4>
+                                <p class="text-center">Director, Pyramid Cyber Security,Chair Member NCDRC<br></p>
+                            </div>
+                        </div>
+                        <div class="row no-gutters img-row">
+                            <div class="col-auto col-sm-6 col-lg-2 offset-xl-0">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/RajeevSobti.jpg"></p>
+                                <h4 class="text-center">Rajeev Sobti</h4>
+                                <p class="text-center">Head, School of Comp. Sc. &amp; Engg.<br>Lovely Professional University<br></p>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-2">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/SantoshKhadsare.jpg"></p>
+                                <h4 class="text-center">Santosh Khadsare<br></h4>
+                                <p class="text-center">Cyber Forensic professional , Government Of India<br></p>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-2">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/NitinPandey.jpg"></p>
+                                <h4 class="text-center">Nitin Pandey<br></h4>
+                                <p class="text-center">Chairman Defcon,Hackers Day,National Informational Security Council<br></p>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-2">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/VirendraKumarSharma.jpg"></p>
+                                <h4 class="text-center">Virender Kumar Sharma<br></h4>
+                                <p class="text-center">I.P.S</p>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-2">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/RahulTyagi.jpeg"></p>
+                                <h4 class="text-center">Rahul Tyagi</h4>
+                                <p class="text-center">Co-Founder and Lead - Training at Lucideus<br></p>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-2">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/AdhokshajMishra.jpg"></p>
+                                <h4 class="text-center">Adhokshaj Mishra<br></h4>
+                                <p class="text-center">Hardware Exploitation Expert<br></p>
+                            </div>
+                        </div>
+                        <p class="lead text-center" style="font-size:36px;font-family:'Source Sans Pro', sans-serif;margin-top:18px;">Our Partners<br></p>
+                        <div class="row no-gutters img-row" style="margin-top:20px;">
+                            <div class="col-sm-6 col-lg-3">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/NationalCyberDefence.png"></p>
+                                <h5 class="text-center">National Cyber Defence Research Centre<br></h5>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/RallyForRivers.jpg"></p>
+                                <h5 class="text-center">Rally For Rivers<br></h5>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-3">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/CyberPeace.jpg"></p>
+                                <h5 class="text-center">Cyber Peace Foundation<br></h5>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-3">
+                                <p class="text-center"><img class="img-fluid" src="assets/img/HackersDay.png" height="200px"></p>
+                                <h5 class="text-center">Hackers Day<br></h5>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-4">
+                                <p class="text-center"><img class="img-fluid" src="assets/img/CyberShrishti.png"></p>
+                                <h5 class="text-center">Cyber Shrishti<br></h5>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-4">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/EMarshals.jpg"></p>
+                                <h5 class="text-center">E Marshals<br></h5>
+                            </div>
+                            <div class="col-auto col-sm-6 col-lg-4 offset-xl-0">
+                                <p class="text-center"><img class="rounded-circle img-fluid" src="assets/img/PunjabPolice.jpg"></p>
+                                <h5 class="text-center">Punjab Police</h5>
                             </div>
                         </div>
                     </div>
@@ -93,130 +179,80 @@
             </div>
         </div>
         <div id="trainings" style="height:auto;margin-top:0;margin-bottom:37px;">
-            <h1 class="text-uppercase text-center heading-center" style="font-family:Muli, sans-serif;letter-spacing:4px;color:rgb(255,255,255);font-weight:normal;font-size:30px;">Trainings</h1>
-            <h2 class="text-center" style="color:rgb(255,255,255);font-family:Muli, sans-serif;letter-spacing:4px;margin-top:16px;">Hack X Ploit</h2>
+            <h1 class="text-uppercase text-center heading-content-sm" style="font-family:Muli, sans-serif;letter-spacing:4px;color:rgb(255,255,255);font-weight:normal;font-size:30px;">Trainings</h1>
             <div style="margin-top:16px;">
-                <ul class="nav nav-tabs nav-justified">
-                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1" style="background-color:transparent;color:rgb(255,255,255);font-size:22px;font-family:'Julius Sans One', sans-serif;font-weight:bold;">Global Infosec Summit 2017</a></li>
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-1" style="background-color:transparent;color:rgb(255,255,255);font-size:26px;font-family:'Julius Sans One', sans-serif;">Hack x ploit</a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" role="tabpanel" id="tab-1">
-                        <div class="row no-gutters">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <div class="media">
-                                    <div class="media-body">
-                                        <blockquote class="blockquote text-center">
-                                            <p class="lead mb-0" style="font-family:'Source Sans Pro', sans-serif;">"An Information and Cyber Security Conference with talks from experts across various domains of technology like WebApps, IoT, Networking, Cyber Crimes, Intelligence, Block Chain, Crypto-currency and many more"</p>
-                                        </blockquote>
-                                        <div class="row no-gutters">
-                                            <div class="col">
-                                                <h1 class="text-center">15</h1>
-                                                <p class="text-center" style="font-family:'Julius Sans One', sans-serif;font-weight:bold;">Speakers</p>
-                                            </div>
-                                            <div class="col">
-                                                <h1 class="text-center">15</h1>
-                                                <p class="text-center" style="font-family:'Julius Sans One', sans-serif;font-weight:bold;">Partners</p>
-                                            </div>
-                                            <div class="col">
-                                                <h1 class="text-center">2</h1>
-                                                <p class="text-center" style="font-family:'Julius Sans One', sans-serif;font-weight:bold;">Days</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <blockquote class="blockquote text-center">
+                            <p class="lead mb-0" style="font-family:'Source Sans Pro', sans-serif;">"A 2 Days Workshop Conducted by Living Out Loud"</p>
+                        </blockquote>
+                        <div class="row no-gutters justify-content-center align-items-center" style="margin:16px;">
+                            <div class="col-6">
+                                <p class="lead text-center" style="font-size:36px;font-family:'Source Sans Pro', sans-serif;border:none;">About the Trainer<br></p>
+                                <h4 class="text-center">Rahul Tyagi</h4>
+                                <p class="lead text-center" style="font-family:'Source Sans Pro', sans-serif;border:none;">VP-Training and Co-Founder at Lucideus<br>With 5 Year Experience in Ethical Hacking, Rahul has conducted 100+ Workshops and Events on Ethical Hacking and Cyber Security.<br></p>
+                            </div>
+                            <div class="col-auto grid">
+                                <figure class="figure effect-zoe"><img class="img-fluid figure-img mr-3 media-img" src="assets/img/RahulTyagiStudents.jpg"><figcaption class="figure-caption">
+    <h2>Rahul Tyagi</h2>
+    <p class="icon-links">
+    <a href="https://www.linkedin.com/in/iamrahultyagi/"><span class="fa fa-linkedin"></span></a>
+    <a href="http://lucideus.com"><span class="fa fa-globe"></span></a>
+    <a href="https://www.quora.com/profile/Rahul-Tyagi-54"><span class="fa fa-quora"></span></a>
+    </p>
+</figcaption></figure>
+                            </div>
+                        </div>
+                        <p class="lead" style="font-family:'Source Sans Pro', sans-serif;font-size:36px;margin-top:18px;margin-left:20px;">About the Workshop<br></p>
+                        <div class="col-auto d-inline-block mx-auto">
+                            <div class="card"><img class="img-thumbnail img-fluid card__img" src="assets/img/hackxploit.jpg" width="560px" style="padding:0;">
+                                <div class="card__text">
+                                    <h3 class="text-center card__title" style="font-family:'Source Sans Pro', sans-serif;">Hack X Ploit</h3>
+                                    <p class="text-center card__body" style="font-family:'Source Sans Pro', sans-serif;">A Workshop On Ethical Hacking</p>
                                 </div>
                             </div>
-                            <div class="col-sm-auto col-md-6 col-lg-auto col-xl-auto offset-sm-2 offset-md-3 offset-lg-4"><img class="img-thumbnail img-fluid infosec-img" src="assets/img/global_infosec_1-001.jpg" width="400px"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="events" style="height:auto;margin-bottom:37px;">
-            <h1 class="text-uppercase text-center heading-center" style="font-family:Muli, sans-serif;letter-spacing:4px;color:rgb(255,255,255);font-size:30px;">Events</h1>
-
-            <hr>
-              <h5 class="text-uppercase text-center" style="font-family:Muli, sans-serif;letter-spacing:4px;color:rgb(255,255,255);">Events Conducted in the Past</h5>
-            <hr>
-
-            <div class="tab-content">
-                <div class="tab-pane fade show active" role="tabpanel" id="tab-1">
-                    <div class="row no-gutters">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            <div class="media ">
-                                <div class="media-body">
-                                  <div class="grid">
-                                    <figure class="effect-ming">
-                                      <img src="assets/img/techoMania2.jpeg" alt="Techo Mania 2.0"/>
-                                      <figcaption>
-                                        <p>"Training under various topics like IOT, AI, Digital Marketing and Stock Exchange"</p>
-                                      </figcaption>
-                                    </figure>
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="media ">
-                                <div class="media-body">
-                                  <div class="grid">
-                                    <figure class="effect-ming">
-                                      <img src="assets/img/xploit.jpeg" alt="Hack Exploit"/>
-                                      <figcaption>
-                                        <p>"Introduction of Hacking to students and live demo of it. Also, some basic hacking was taught to them."</p>
-                                      </figcaption>
-                                    </figure>
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="media ">
-                                <div class="media-body">
-                                  <div class="grid">
-                                    <figure class="effect-ming">
-                                      <img src="assets/img/gis.jpeg" alt="Global Infosec Summit 2017"/>
-                                      <figcaption>
-                                        <p>"An Information and Cyber Security Conference with talks from experts across
-                                          various domains of technology like WebApps, IoT, Networking, Cyber Crimes,
-                                          Intelligence, Block Chain, Crypto-currency and many more"</p>
-                                      </figcaption>
-                                    </figure>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h1 class="text-uppercase text-center heading-content-sm" style="font-family:Muli, sans-serif;letter-spacing:4px;color:rgb(255,255,255);font-size:30px;">Events</h1>
         </div>
-
     </div>
-    <footer style="height:auto;padding-top:10px;padding-right:0;margin-top:0;padding-left:20px;background-color:rgba(41,44,47,0);">
+    <footer style="height:auto;padding-top:10px;padding-right:0;margin-top:0;padding-left:20px;background-color:rgba(16,16,16,0.99);padding-bottom:20px;">
         <div class="row no-gutters" style="width:auto;height:auto;">
-            <div class="col-sm-12 col-md-5">
+            <div class="col-auto col-sm-8 col-md-6 col-lg-auto mx-auto">
                 <h5 style="margin-bottom:14px;font-family:Muli, sans-serif;">Drop by our Office</h5>
-                <p class="d-inline" style="font-family:Muli, sans-serif;font-size:14px;"><i class="icon ion-android-pin" style="color:rgb(203,51,51);font-size:14px;"></i>&nbsp;Lovely Professional University, Jalandhar, Punjab, 144411</p><iframe allowfullscreen="" frameborder="0" width="70%" height="130" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBYhPokherqPvXqET8oB6nMOrtQ1ShL_7w&amp;q=Lovely+Professional+University%2C+Jalandhar%2C+Punjab&amp;zoom=11"
+                <p style="font-family:Muli, sans-serif;font-size:14px;"><i class="icon ion-android-pin" style="color:rgb(203,51,51);font-size:14px;"></i>&nbsp;Lovely Professional University, Jalandhar, Punjab, 144411</p><iframe allowfullscreen="" frameborder="0" width="50%" height="130" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBYhPokherqPvXqET8oB6nMOrtQ1ShL_7w&amp;q=Lovely+Professional+University%2C+Jalandhar%2C+Punjab&amp;zoom=11"
                     style="margin-top:15px;"></iframe></div>
-            <div class="col-auto col-sm-12 col-md-1" style="margin-right:50px;margin-left:16px;">
+            <div class="col-auto col-sm-4 col-md-2 col-lg-auto offset-sm-0 mx-md-auto" style="margin-right:0;margin-left:0;">
                 <ul class="nav flex-column" style="font-size:13px;">
-                    <li class="nav-item"><a class="nav-link active" href="#" style="font-family:Muli, sans-serif;">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" style="font-family:Muli, sans-serif;">CSAP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" style="font-family:Muli, sans-serif;">Trainings</a></li>
+                    <li class="nav-item navbar-link"><a class="nav-link active" href="#" style="font-family:Muli, sans-serif;">Home</a></li>
+                    <li class="nav-item navbar-link"><a class="nav-link" href="#" style="font-family:Muli, sans-serif;">CSAP</a></li>
+                    <li class="nav-item navbar-link"><a class="nav-link" href="#" style="font-family:Muli, sans-serif;">Trainings</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" style="font-family:Muli, sans-serif;">Events</a></li>
                 </ul>
             </div>
-            <div class="col-auto col-sm-12 col-md-auto" style="margin-right:67px;">
+            <div class="col-auto col-sm-2 col-md-4 col-lg-auto mx-lg-auto" style="margin-right:0;">
                 <h5 style="font-family:Muli, sans-serif;">Connect with Us</h5><a href="https://www.facebook.com/livingoutloudlpu/" style="/*color:#0051ba;*/"><i class="fa fa-facebook" style="margin-right:6px;font-size:30px;"></i></a><a href="#"><i class="fa fa-instagram" style="margin-right:8px;font-size:30px;"></i></a>
                 <a
                     href="#"><i class="fa fa-linkedin" style="font-size:30px;"></i></a>
             </div>
-            <div class="col-auto col-sm-12 col-md-auto" style="margin-right:9px;">
+            <div class="col-auto col-sm-auto col-md-7 col-lg-auto mx-auto" style="margin-right:0;">
                 <h5 class="text-nowrap" style="font-family:Muli, sans-serif;">Subscribe to our Newsletter</h5>
                 <form method="post">
                     <div class="form-group"><input class="form-control" type="email" required="" placeholder="Your Email ID..." inputmode="email" style="font-family:Muli, sans-serif;"></div><button class="btn btn-info" type="submit" style="font-size:17px;font-family:Muli, sans-serif;">Subscribe&nbsp;<i class="fa fa-send"></i></button></form>
             </div>
         </div>
         <div class="col-12">
-            <p class="text-center"><a class="text-secondary" href="#"><i class="fa fa-chevron-up" style="font-size:22px;"></i></a></p>
+            <p class="text-center" style="margin-bottom:0;"><a class="text-secondary" href="#"><i class="fa fa-chevron-up" style="font-size:22px;"></i></a></p>
         </div>
         <div class="col-12">
-            <p class="text-nowrap text-center text-muted">Living Out Loud&nbsp;<i class="fa fa-copyright"></i>&nbsp; 2018</p>
+            <p class="text-nowrap text-center text-muted" style="margin-bottom:0;">Living Out Loud&nbsp;<i class="fa fa-copyright"></i>&nbsp; 2018</p>
         </div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
