@@ -6,6 +6,11 @@ body {
   background-position:center;
 }
 
+.underline {
+  border-bottom:2px solid white;
+  border-width:thin;
+}
+
 .navbar-link::before {
   content:'';
   position:relative;
@@ -166,9 +171,7 @@ nav.shrink .navbar-toggle {
 .heading-content-sm {
   position:relative;
   display:block;
-Trainings-and-Other-Updates
   cursor:context-menu;
-master
 }
 
 .heading-content-sm::before {
@@ -180,7 +183,6 @@ master
   height:0;
   background:transparent;
   border:2px solid transparent;
-Trainings-and-Other-Updates
 }
 
 .heading-content-sm:hover::before {
@@ -474,6 +476,16 @@ footer a:hover {
   margin-bottom:0;
 }
 
+.grid {
+  position:relative;
+  clear:both;
+  margin:0 auto;
+  padding:1em 0 4em;
+  max-width:1000px;
+  list-style:none;
+  text-align:center;
+}
+
 .grid figure {
   position:relative;
   float:left;
@@ -592,6 +604,148 @@ figure.effect-zoe:hover p.icon-links a:nth-child(2) {
 figure.effect-zoe:hover p.icon-links a:first-child {
   -webkit-transition-delay:0.2s;
   transition-delay:0.2s;
-master
+}
+
+.grid-2 {
+  position:relative;
+  clear:both;
+  margin:0 auto;
+  padding:1em 0 4em;
+  max-width:1000px;
+  list-style:none;
+  text-align:center;
+}
+
+.grid-2 figure {
+  position:relative;
+  float:none;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  overflow:hidden;
+  margin:10px 1%;
+  min-width:320px;
+  max-width:480px;
+  max-height:360px;
+  height:auto;
+  background:#010101;
+  text-align:center;
+  cursor:pointer;
+}
+
+.grid-2 figure img {
+  position:relative;
+  display:block;
+  min-height:100%;
+  max-width:100%;
+  opacity:0.8;
+}
+
+.grid-2 figure figcaption {
+  padding:2em;
+  color:#fff;
+  text-transform:uppercase;
+  font-size:1.25em;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+}
+
+.grid-2 figure figcaption::before {
+  pointer-events:none;
+}
+
+.grid-2 figure figcaption::after {
+  pointer-events:none;
+}
+
+.grid-2 figure figcaption {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.grid-2 figure h2 {
+  word-spacing:-0.15em;
+  font-weight:300;
+}
+
+.grid-2 figure p {
+  margin:0;
+}
+
+.grid-2 figure p {
+  letter-spacing:1px;
+  font-size:68.5%;
+}
+
+figure.effect-ming {
+  background:#030c17;
+}
+
+figure.effect-ming img {
+  opacity:0.9;
+  -webkit-transition:opacity 0.35s;
+  transition:opacity 0.35s;
+}
+
+figure.effect-ming figcaption::before {
+  position:absolute;
+  top:30px;
+  right:30px;
+  bottom:30px;
+  left:30px;
+  border:2px solid #fff;
+  box-shadow:0 0 0 30px rgba(255,255,255,0.2);
+  content:'';
+  opacity:0;
+  -webkit-transition:opacity 0.35s, -webkit-transform 0.35s;
+  transition:opacity 0.35s, transform 0.35s;
+  -webkit-transform:scale3d(1.4,1.4,1);
+  transform:scale3d(1.4,1.4,1);
+}
+
+figure.effect-ming p {
+  padding:1em;
+  opacity:0;
+  -webkit-transition:opacity 0.35s, -webkit-transform 0.35s;
+  transition:opacity 0.35s, transform 0.35s;
+  -webkit-transform:scale(1.5);
+  transform:scale(1.5);
+}
+
+figure.effect-ming:hover h2 {
+  -webkit-transform:scale(0.9);
+  transform:scale(0.9);
+}
+
+figure.effect-ming:hover figcaption::before, figure.effect-ming:hover p {
+  opacity:1;
+  -webkit-transform:scale3d(1,1,1);
+  transform:scale3d(1,1,1);
+}
+
+figure.effect-ming:hover figcaption {
+  background-color:rgba(0,0,0,0.5);
+}
+
+figure.effect-ming:hover img {
+  opacity:0.4;
+}
+
+@media screen and (max-width: 50em) {
+  .content {
+    padding:0 10px;
+    text-align:center;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .grid figure {
+    display:inline-block;
+    float:none;
+    margin:10px auto;
+    width:100%;
+  }
 }
 
