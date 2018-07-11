@@ -166,7 +166,9 @@ nav.shrink .navbar-toggle {
 .heading-content-sm {
   position:relative;
   display:block;
+Trainings-and-Other-Updates
   cursor:context-menu;
+master
 }
 
 .heading-content-sm::before {
@@ -178,6 +180,7 @@ nav.shrink .navbar-toggle {
   height:0;
   background:transparent;
   border:2px solid transparent;
+Trainings-and-Other-Updates
 }
 
 .heading-content-sm:hover::before {
@@ -589,5 +592,6 @@ figure.effect-zoe:hover p.icon-links a:nth-child(2) {
 figure.effect-zoe:hover p.icon-links a:first-child {
   -webkit-transition-delay:0.2s;
   transition-delay:0.2s;
+master
 }
 
