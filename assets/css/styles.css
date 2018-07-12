@@ -8,7 +8,12 @@ body {
 
 canvas {
   display: block;
-  /* vertical-align: bottom; */
+}
+
+
+#overlay {
+  position: relative;
+  padding: 50px;
 }
 
 #particles-js {
@@ -27,14 +32,30 @@ canvas {
   z-index: 0;
 }
 
-#overlay {
-  position: relative;
-  padding: 50px;
-}
-
 .underline {
   border-bottom:2px solid white;
   border-width:thin;
+}
+
+nav.navbar.shrink {
+  min-height:35px;
+  background-color:#000000;
+}
+
+nav.shrink a {
+  padding-top:0px !important;
+  padding-bottom:0px !important;
+  font-size:15px;
+  color:white !important;
+}
+
+nav.shrink .navbar-brand {
+  width:40px;
+}
+
+nav.shrink .navbar-toggle {
+  padding:4px 5px;
+  margin:8px 15px 8px 0;
 }
 
 .navbar-link::before {
@@ -75,16 +96,16 @@ canvas {
   transform-origin:left;
 }
 
-#csap {
-  box-shadow:8px 8px 10px rgba(45,42,42,0.48);
+@media (min-width: 320px){
+  #content{
+    box-shadow: none;
+  }
 }
 
-#trainings {
-  box-shadow:8px 8px 10px rgba(45,42,42,0.48);
-}
-
-#events {
-  box-shadow:8px 8px 10px rgba(45,42,42,0.48);
+@media (min-width: 768px){
+  #content{
+    box-shadow:8px 8px 10px rgba(45,42,42,0.48);
+  }
 }
 
 .navbar-transparency {
@@ -97,11 +118,35 @@ canvas {
   box-shadow:2px 2px 9px black;
 }
 
+@media (min-width: 320px){
+  .heading-center h1 strong{
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 576px){
+  .heading-center h1 strong{
+    font-size: 6rem;
+  }
+}
+
 .heading-center {
   position:relative;
-  display:block;
   cursor:pointer;
 }
+
+@media (min-width: 320px){
+  .heading-center{
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px){
+  .heading-center{
+    display: block;
+  }
+}
+
 
 .heading-center::before {
   content:'';
@@ -171,27 +216,6 @@ canvas {
     border-bottom-color:transparent;
     border-left-color:transparent;
   }
-}
-
-nav.navbar.shrink {
-  min-height:35px;
-  background-color:#000000;
-}
-
-nav.shrink a {
-  padding-top:0px !important;
-  padding-bottom:0px !important;
-  font-size:15px;
-  color:white !important;
-}
-
-nav.shrink .navbar-brand {
-  width:40px;
-}
-
-nav.shrink .navbar-toggle {
-  padding:4px 5px;
-  margin:8px 15px 8px 0;
 }
 
 .heading-content-sm {
